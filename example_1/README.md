@@ -190,6 +190,7 @@ Enter into container and start tests
 docker-compose exec app bash
 composer install
 ./vendor/bin/phpunit ./tests/.
+exit
 ```
 
 ### Application start
@@ -197,6 +198,7 @@ Enter into container and start script
 ```
 docker-compose exec app bash
 php start.php
+exit
 ```
 
 
