@@ -43,7 +43,7 @@ Situation
 #### Start application
 1. Clone application 
 ```
-    git clone .....
+    git clone https://github.com/endemio/test-cv
 
 ```
 2. Install docker/docker-compose (this is example for Centos 7)
@@ -67,6 +67,7 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 3. Build application
 ```
+cd ./example_1
 docker-compose up -d
 
 ```
