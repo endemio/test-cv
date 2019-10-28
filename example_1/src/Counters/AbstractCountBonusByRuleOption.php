@@ -58,6 +58,20 @@ abstract class AbstractCountBonusByRuleOption
                     $value = -$Rule->sign() * $salary * $countryTax / 100;
                 }
             }
+
+            // increase/decrease by percent from current tax payment
+            // check if $bonus is not larger then $taxPayment
+            if (abs($Rule->byMoney())) {
+
+                $taxPayment = -$Rule->sign() * $salary * $countryTax / 100;
+
+                if ($taxPayment > $Rule->byMoney()) {
+                    $value= -$Rule->sign() * $Rule->byMoney();
+                } else {
+                    $value = $taxPayment;
+                }
+            }
+
         }
         $result += $value;
 

@@ -140,7 +140,7 @@ docker-compose up -d
 
 4. Set check options
 
-    Start option builder
+    Create option builder
     ```php
     $optionsBuilder = new OptionBuilder();
     ```
