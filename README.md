@@ -1,0 +1,1 @@
+This repository created to store examples of task from interview.
