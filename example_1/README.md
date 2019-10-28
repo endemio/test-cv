@@ -96,6 +96,7 @@ docker-compose up -d
     ```
 
 3. Set bonus and deduction rules.
+
     First of all create rule builder.
     ```php
     $ruleBuilder = new RuleBuilder();
@@ -138,6 +139,7 @@ docker-compose up -d
     **Important**: Application use rule with nearest parameter value to employer settings. For example, if you set *ageGreater(50), ageGreater(53), ageGreater(56)*, for employer with age 54 application choose rule with *ageGreater(53)*, not *ageGreater(50)* even if bonus for *ageGreater(50)* will be greater then for *ageGreater(53)*  
 
 4. Set check options
+
     Start option builder
     ```php
     $optionsBuilder = new OptionBuilder();
