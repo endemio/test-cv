@@ -1,0 +1,8 @@
+# docker-compose
+version: "3.6"
+services:
+
+  app:
+    build: ./docker/php
+    volumes:
+      - ./:/var/www
