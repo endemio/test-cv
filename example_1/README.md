@@ -187,6 +187,8 @@ docker-compose up -d
 ### Application test
 Enter into container and start tests
 ```
+docker-compose exec app bash
+composer install
 ./vendor/bin/phpunit ./tests/.
 ```
 
