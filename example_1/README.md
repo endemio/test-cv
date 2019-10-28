@@ -1,8 +1,9 @@
-#### Test example
+## Test example
 
-##### Task
+### Task
 ```
-Please, keep in mind **OOP, software design patterns, code architecture, tests and accuracy in implementation** during developing.
+Please, keep in mind OOP, software design patterns, code architecture, tests and accuracy
+in implementation during developing.
 
 Here you need to build an application which can calculate the salary of employees.
 
@@ -21,7 +22,7 @@ Situation
 ```
 
 
-#### Application structure
+### Application structure
 ```
 - example_1
     |
@@ -35,12 +36,13 @@ Situation
     |- tests
     |- vendors
     |- docker
+    |- docker-compose.yml
     |- start.php
     |- composer.json
     |- README.md
 ```
 
-#### Start application
+### Start application
 1. Clone application 
 ```
     git clone https://github.com/endemio/test-cv
@@ -72,7 +74,7 @@ docker-compose up -d
 
 ```
 
-#### Application settings
+### Application settings
 
 1. Create employers. Each employer has *name*, *age* and *salary*.
    ```php
@@ -81,7 +83,7 @@ docker-compose up -d
    but also he/she can have kid/kids and use company car
    ```php
    $employerBuilder->addKids(2); # 2 is number of kids
-   $employerBuilder->addCar(); # this is mean that employer using company car
+   $employerBuilder->addCar(); # it's mean that employer using company car
    ```
    When you set all option for employer - "build" him/her;
    ```php
@@ -180,13 +182,13 @@ docker-compose up -d
     +--------------------+----------+
     ```
 
-#### Application test
+### Application test
 Enter into container and start tests
 ```
 ./vendor/bin/phpunit ./tests/.
 ```
 
-#### Application start
+### Application start
 Enter into container and start script
 ```
 docker-compose exec app bash
